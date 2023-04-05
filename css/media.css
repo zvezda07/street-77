@@ -1,0 +1,140 @@
+@media (max-width: 736px) {
+    .begin__container {
+        gap: 20px;
+    }
+
+    .begin__list {
+        justify-content: center;
+    }
+
+    .nav__container {
+        gap: 20px;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 70vh;
+        background: rgba(0,0,0,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: 0.4s;
+        z-index: 98;
+    }
+
+    .nav__burger:hover ~ .nav__menu {
+        transform: scale(1);
+    }
+    
+
+    .nav__burger {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 99;
+    }
+
+    .nav__burger-line {
+        background: white;
+        width: 100%;
+        height: 2px;
+        position: relative;
+    }
+
+    .nav__burger-line::before,
+    .nav__burger-line::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+
+    .nav__burger-line::before {
+        top: -10px;
+    }
+
+    .nav__burger-line::after {
+        top: 10px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__list {
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .header__Title {
+        font-size: 55px;
+    }
+
+    .header__title {
+        font-size: 26px;
+    }
+
+    .header__price {
+        width: 230px;
+        padding: 6px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .begin__container {
+        justify-content: center;
+    }
+
+    .nav__container {
+        justify-content: center;
+    }
+
+    /* .product {
+        margin: 20px 10px 0 10px;
+    } */
+
+    .productes {
+        grid-template-columns: 1fr;
+    }
+
+    .main__nav-item {
+        margin-bottom: 10px;
+    }
+
+    .maps__link {
+        font-size: 40px;
+    }
+
+    .footer__list {
+        padding: 50px 0 40px;
+    }
+
+    .footer__begin {
+        justify-content: center;
+    }
+
+    .footer__image {
+        margin-bottom: 15px;
+    }
+
+    .about__main-link {
+        font-size: 40px;
+    }
+
+    .about__main-txt {
+        font-size: 16px;
+    }
+}
